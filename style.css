@@ -1,0 +1,90 @@
+:root {
+	--success-color: rgb(68, 154, 99);
+	--error-color: rgb(239, 91, 91);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+	background-color: rgb(238, 238, 238);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.container {
+	background-color: rgb(255, 255, 255);
+	border-radius: 8px;
+	box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.1);
+	width: 400px;
+}
+.form {
+	padding: 30px 40px;
+}
+h1 {
+	text-align: center;
+	margin: 0 0 20px;
+}
+
+.form__field {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	position: relative;
+}
+.form__field label {
+	color: rgb(136, 136, 136);
+	display: block;
+	margin-bottom: 5px;
+}
+.form__field input {
+	border: 2px solid rgb(241, 241, 241);
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 12px;
+}
+.form__field input:focus {
+	outline: 0;
+	border-color: rgb(71, 71, 106);
+}
+.form__field.success input {
+	border-color: var(--success-color);
+}
+.form__field.error input {
+	border-color: var(--error-color);
+}
+
+.form__field span {
+	font-size: 10px;
+	color: var(--error-color);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form__field.error span {
+	visibility: visible;
+}
+
+.form button {
+	cursor: pointer;
+	background-color: rgb(53, 53, 71);
+	border: 2px solid rgb(53, 53, 71);
+	border-radius: 4px;
+	color: white;
+	display: block;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}

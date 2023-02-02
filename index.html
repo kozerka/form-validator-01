@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="form">
+            <h1>Register</h1>
+            <div class="form__field">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Please enter your username">
+
+                <span>Error</span>
+            </div>
+            <div class="form__field">
+                <label for="email">Email</label>
+                <input type="text" id="username" placeholder="Please enter your email">
+                <span>Error</span>
+            </div>
+            <div class="form__field">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Please enter your password">
+                <span>Error</span>
+            </div>
+            <div class="form__field">
+                <label for="retyped-password">Retype password</label>
+                <input type="password" id="retyped-password" placeholder="Please retype your password">
+                <span>Error</span>
+            </div>
+            <button type="submit">Submit</button>
+
+
+        </form>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
