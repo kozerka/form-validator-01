@@ -51,6 +51,7 @@ h1 {
 	width: 100%;
 	padding: 10px;
 	font-size: 12px;
+	margin-bottom: 6px;
 }
 .form__field input:focus {
 	outline: 0;
